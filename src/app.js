@@ -1,7 +1,7 @@
 export function sumar(a, b) {
   return a + b;
 }
-
+// Esta función agrega elementos nuevos a la lista en la interfaz
 export function agregarItem(texto) {
   const lista = document.getElementById('lista');
   if (!lista) return;
