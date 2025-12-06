@@ -1,8 +1,8 @@
-export function sumar(a, b) {
+function sumar(a, b) {
   return a + b;
 }
-// Esta función agrega elementos nuevos a la lista en la interfaz
-export function agregarItem(texto) {
+
+function agregarItem(texto) {
   const lista = document.getElementById("lista");
   if (!lista) return;
   const li = document.createElement("li");
@@ -10,11 +10,5 @@ export function agregarItem(texto) {
   lista.appendChild(li);
 }
 
-if (typeof window !== "undefined") {
-  const btn = document.getElementById("btnAgregar");
-  btn?.addEventListener("click", () => {
-    agregarItem("Ítem agregado");
-  });
-
-  console.log("App lista");
-}
+// Exportar para que los tests puedan usarlo
+module.exports = { sumar, agregarItem };
