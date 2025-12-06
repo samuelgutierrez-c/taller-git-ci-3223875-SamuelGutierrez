@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/samuelgutierrez-c/taller-git-ci-3223875-SamuelGutierrez/issues"
   },
-  "homepage": "https://github.com/samuelgutierrez-c/taller-git-ci-3223875-SamuelGutierrez#readme"
+  "homepage": "https://github.com/samuelgutierrez-c/taller-git-ci-3223875-SamuelGutierrez#readme",
+  "devDependencies": {
+    "prettier": "^3.7.4"
+  }
 }
