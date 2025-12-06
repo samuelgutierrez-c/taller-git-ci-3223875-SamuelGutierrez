@@ -1,20 +1,14 @@
-export function sumar(a, b) {
+function sumar(a, b) {
   return a + b;
 }
 
-export function agregarItem(texto) {
-  const lista = document.getElementById('lista');
+function agregarItem(texto) {
+  const lista = document.getElementById("lista");
   if (!lista) return;
-  const li = document.createElement('li');
+  const li = document.createElement("li");
   li.textContent = texto;
   lista.appendChild(li);
 }
 
-if (typeof window !== 'undefined') {
-  const btn = document.getElementById('btnAgregar');
-  btn?.addEventListener('click', () => {
-    agregarItem('Ítem agregado');
-  });
-
-  console.log('App lista');
-}
+// Exportar para que los tests puedan usarlo
+module.exports = { sumar, agregarItem };

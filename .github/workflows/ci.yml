@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ main, feat/ui-basica ]
+    branches: [main, feat/ui-basica]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   checks:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
 
       - name: Install dependencies
         run: npm install
