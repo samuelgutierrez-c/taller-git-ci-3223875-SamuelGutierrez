@@ -1,5 +1,5 @@
-import { strict as assert } from "assert";
-import { sumar } from "../src/app.js";
+const assert = require("assert/strict");
+const { sumar } = require("../src/app.js");
 
 describe("sumar", () => {
   it("suma correctamente 2 + 3", () => {
